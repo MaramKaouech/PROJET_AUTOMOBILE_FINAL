@@ -1,0 +1,49 @@
+# =============================================================================
+# DÉPENDANCES POUR L'ANALYSE AUTOMOBILE COMPLÈTE
+# =============================================================================
+# 
+# Ce fichier liste toutes les dépendances Python nécessaires pour exécuter
+# l'analyse automobile complète avec tous les modèles ML et visualisations.
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# Compatibilité:
+#   - Python 3.8+
+#   - Testé sur Windows, macOS, Linux
+#
+# =============================================================================
+
+# MANIPULATION DE DONNÉES
+# -----------------------------------------------------------------------------
+pandas>=2.0.0              # Manipulation et analyse de données
+numpy>=1.24.0               # Calculs numériques et matrices
+
+# VISUALISATION
+# -----------------------------------------------------------------------------
+matplotlib>=3.7.0           # Graphiques de base
+seaborn>=0.12.0             # Graphiques statistiques avancés
+plotly>=5.15.0              # Dashboards interactifs (PRINCIPAL)
+
+# MACHINE LEARNING
+# -----------------------------------------------------------------------------
+scikit-learn>=1.3.0         # Modèles ML de base (Régression Linéaire)
+xgboost>=1.7.0              # Gradient Boosting (MODÈLE PRINCIPAL)
+
+# SÉRIES TEMPORELLES
+# -----------------------------------------------------------------------------
+prophet>=1.1.0              # Prévisions séries temporelles (Facebook)
+statsmodels>=0.14.0         # Modèles statistiques (ARIMA)
+
+# UTILITAIRES
+# -----------------------------------------------------------------------------
+openpyxl>=3.1.0             # Export Excel
+tqdm>=4.65.0                # Barres de progression
+joblib>=1.3.0               # Sauvegarde modèles ML
+
+# DÉPENDANCES OPTIONNELLES (installées automatiquement)
+# -----------------------------------------------------------------------------
+# scipy                     # Calculs scientifiques (via scikit-learn)
+# pytz                      # Gestion fuseaux horaires (via pandas)
+# python-dateutil           # Manipulation dates (via pandas)
+# kaleido                   # Export images Plotly (optionnel)
